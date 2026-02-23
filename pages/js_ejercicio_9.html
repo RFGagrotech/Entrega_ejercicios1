@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <header>
+        <a href="../index.html">Volver</a>
+    </header>
+    <main>
+        <h1>Lista de Tareas con LocalStorage</h1>
+        <p>Crea una aplicación de lista de tareas.
+            <ul>
+                <ol>Cada tarea debe incluir un texto y un checkbox para marcarla como completada.</ol>
+                <ol>Las tareas se deben guardar en localStorage para que persistan incluso si la página se recarga.</ol>
+                <ol>Debe incluir un botón para limpiar todas las tareas completadas y actualizar el localStorage.</ol>
+            </ul>
+        </p>
+        <h2>To-Do</h2>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Nueva tarea..." autocomplete="off">
+            <button type="submit">Añadir</button>
+        </form>
+
+        <ul id="taskList"></ul>
+        <button id="clearCompleted">Limpiar completadas</button>
+    </main>
+
+    </div>
+    <script src="../js/js_ejercicio9.js"></script>
+</body>
+</html>
