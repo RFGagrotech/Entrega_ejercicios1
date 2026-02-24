@@ -17,5 +17,5 @@ document.body.appendChild(resetBtn);
 //Crear el evento del botón
 resetBtn.addEventListener("click", () => {
     clicks = 0;
-    counterText.textContent = `Clicks: ${clicks}`;
+    counterText.textContent = `Clics: ${clicks}`;
 })
