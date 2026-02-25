@@ -5,14 +5,22 @@ const list = document.getElementById("list");
 const animals = ["Perro", "Gato", "Pez", "Castór", "Rata", "Ardilla", "Ornitorrinco"];
 
 //Mostrar lista inicial
-function renderList(items) {
+function renderList(items, searchText = "") {
     list.innerHTML = "";
 
     items.forEach(item => {
         let li = document.createElement("li");
-        li.textContent = item;
+
+        //Si hay texto escrito -> subrayar la coincidencia
+        if (searchText !=="") {
+            let regex = new RegExp(`(${searchText})`, "gi");
+            li.innerHTML = item.remplace(regex,"<u>$1</u>");
+        } else {
+            li.textContent = item;
+        }
+
         list.appendChild(li);
-    })
+    });
 }
 
 //mostrar lista inicial
@@ -20,7 +28,7 @@ renderList(animals);
 
 // evento mientras escribe
 input.addEventListener("input", () => {
-    let text = input.ariaValueMax.trim().toLowerCase();
+    let text = input.value.trim().toLowerCase();
 
     let filtered = animals.filter(animal =>
         animal.toLowerCase().includes(text)
