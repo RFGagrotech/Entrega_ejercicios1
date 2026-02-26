@@ -4,7 +4,7 @@ let result = document.getElementById("result");
 
 //Establezco carácteres permitidos
 const chars = 
-"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+[]{}<>?";
+"ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789!@#$%^&*()_+[]{}<>?";
 
 button.addEventListener("click", () => {
     let length = Number(lengthInput.value.trim());

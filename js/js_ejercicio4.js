@@ -14,7 +14,7 @@ function renderList(items, searchText = "") {
         //Si hay texto escrito -> subrayar la coincidencia
         if (searchText !=="") {
             let regex = new RegExp(`(${searchText})`, "gi");
-            li.innerHTML = item.remplace(regex,"<u>$1</u>");
+            li.innerHTML = item.replace(regex,"<u>$1</u>");
         } else {
             li.textContent = item;
         }
