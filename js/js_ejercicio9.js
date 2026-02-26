@@ -9,7 +9,7 @@ let STORAGE_KEY = "task_v1";
 
 // Helpers LocalStorage
 function loadTasks() {
-  const raw = localStorage.getItem(STORAGE_KEY);
+  let raw = localStorage.getItem(STORAGE_KEY);
   return raw ? JSON.parse(raw) : [];
 }
 
