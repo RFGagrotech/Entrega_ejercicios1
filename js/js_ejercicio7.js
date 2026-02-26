@@ -10,7 +10,7 @@ button.addEventListener("click", () => {
     let length = Number(lengthInput.value.trim());
 
     //Validación
-    if (lengthInput.value === "" || isNaN(length) || lenght < 4){
+    if (lengthInput.value === "" || isNaN(length) || length < 4){
         result.textContent = "La longitud debe ser mayor o igual a 4";
         return;
     }
